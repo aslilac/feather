@@ -1,0 +1,17 @@
+{
+	"private": true,
+	"name": "@feather/demo",
+	"version": "1.0.0",
+	"author": "McKayla Washburn <mckayla@hey.com>",
+	"dependencies": {
+		"feather": "*"
+	},
+	"devDependencies": {
+		"vite": "^2.7.13"
+	},
+	"scripts": {
+		"build": "vite build",
+		"dev": "vite",
+		"lint": "eslint ."
+	}
+}

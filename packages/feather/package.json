@@ -1,0 +1,52 @@
+{
+	"name": "feather",
+	"version": "0.0.0",
+	"author": "McKayla Washburn <mckayla@hey.com>",
+	"description": "",
+	"keywords": [],
+	"license": "MIT",
+	"homepage": "https://github.com/aslilac/feather",
+	"repository": "https://github.com/aslilac/feather",
+	"bugs": "https://github.com/aslilac/feather/issues",
+	"type": "commonjs",
+	"main": "./target/index.js",
+	"module": "./target/index.js",
+	"types": "./target/index.d.ts",
+	"exports": {
+		"import": "./target/index.js"
+	},
+	"bin": {},
+	"files": [
+		"target/**"
+	],
+	"dependencies": {
+		"react": "^17.0.2",
+		"react-chic": "^0.4.0",
+		"react-dom": "^17.0.2"
+	},
+	"devDependencies": {
+		"@mckayla/prettier": "^1.0.1",
+		"@mckayla/tsconfig": "^1.0.2",
+		"@types/jest": "^27.0.3",
+		"@types/react": "^17.0.38",
+		"@types/react-dom": "^17.0.11",
+		"eslint": "^8.5.0",
+		"eslint-config-mckayla": "^1.0.4",
+		"jest": "^27.4.5",
+		"nova-build": "^0.3.8",
+		"prettier": "^2.5.1",
+		"stylelint": "^14.3.0",
+		"stylelint-config-mckayla": "^0.1.3",
+		"ts-jest": "^27.1.2",
+		"typescript": "^4.5.4"
+	},
+	"scripts": {
+		"build": "nova",
+		"dev": "nova -w",
+		"fmt": "prettier --write .",
+		"lint": "eslint .",
+		"prepack": "npm run build -s",
+		"test": "jest",
+		"type-check": "tsc -p . --noEmit"
+	}
+}
