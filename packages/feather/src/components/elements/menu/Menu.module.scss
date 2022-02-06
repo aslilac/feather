@@ -1,0 +1,22 @@
+.menu {
+	display: inline-flex;
+	flex-flow: column nowrap;
+	background-color: var(--color-background-1);
+	border-radius: 0.3em;
+	border: 1px solid var(--color-border-1);
+	box-shadow: 0 0 8px var(--color-shadow-m);
+	padding: 0.25em;
+	min-width: 14em;
+	max-width: 50vw;
+	color: var(--color-foreground-2);
+
+	hr {
+		border: 1px solid var(--color-border-1);
+		padding: 0;
+		margin: 0.25em;
+	}
+
+	> * {
+		padding: 0.25em;
+	}
+}

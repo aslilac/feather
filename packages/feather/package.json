@@ -2,7 +2,7 @@
 	"name": "feather",
 	"version": "0.0.0",
 	"author": "McKayla Washburn <mckayla@hey.com>",
-	"description": "",
+	"description": "A practical component library for React",
 	"keywords": [],
 	"license": "MIT",
 	"homepage": "https://github.com/aslilac/feather",
@@ -13,9 +13,13 @@
 	"module": "./target/index.js",
 	"types": "./target/index.d.ts",
 	"exports": {
-		"import": "./target/index.js"
+		".": {
+			"import": "./target/index.js"
+		},
+		"./reset": {
+			"import": "./reset/index.js"
+		}
 	},
-	"bin": {},
 	"files": [
 		"target/**"
 	],

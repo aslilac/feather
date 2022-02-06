@@ -3,15 +3,16 @@
 	"name": "@feather/demo",
 	"version": "1.0.0",
 	"author": "McKayla Washburn <mckayla@hey.com>",
+	"source": "./src/index.html",
 	"dependencies": {
 		"feather": "*"
 	},
 	"devDependencies": {
-		"vite": "^2.7.13"
+		"parcel": "^2.2.1"
 	},
 	"scripts": {
-		"build": "vite build",
-		"dev": "vite",
+		"build": "parcel build",
+		"dev": "parcel",
 		"lint": "eslint ."
 	}
 }

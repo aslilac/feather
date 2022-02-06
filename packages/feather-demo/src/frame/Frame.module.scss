@@ -1,0 +1,7 @@
+.frame {
+	display: grid;
+	grid-template-columns: auto 1fr;
+
+	max-height: 100vh;
+	overflow: hidden;
+}

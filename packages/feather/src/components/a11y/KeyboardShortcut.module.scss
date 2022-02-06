@@ -1,0 +1,35 @@
+.kbd {
+	// border: 1px solid var(--color-shadow-l);
+	// border-radius: 0.2em;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.letter,
+.function {
+	font-family: var(--font-sans-serif);
+	text-transform: uppercase;
+}
+
+.function {
+	font-size: 0.7em;
+}
+
+.symbol,
+.enter {
+	font-family: serif;
+}
+
+.space {
+	font-family: var(--font-soft);
+	transform: translateY(-0.15em);
+}
+
+.enter {
+	transform: translateY(0.15em);
+}
+
+.arrow {
+	font-family: var(--font-soft);
+}

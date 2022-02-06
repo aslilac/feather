@@ -1,9 +1,11 @@
-# Feather
+<h1 align="center"><img alt="Feather" src="media/feather-circle.svg" height="200" /></h1>
 
-Very, _very_ early stage React component library.
+Feather is a very, _very_ early stage React component library.
 
-Serves roughly 3 purposes...
+Focuses on providing a nice developer experience for building accessible, and good looking
+apps with React.
 
--   Test bed for [Nova](https://github.com/aslilac/nova)
--   Test bed for [Chic](https://github.com/aslilac/chic)
--   Just a nice usable library for making apps, eventually. :)
+It also serves as...
+
+-   Test bed for [Nova](https://github.com/aslilac/nova) (my build tool for React libraries)
+-   Test bed for [Chic](https://github.com/aslilac/chic) (my SCSS-in-JS library for React)

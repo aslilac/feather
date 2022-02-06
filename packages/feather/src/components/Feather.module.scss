@@ -1,3 +1,99 @@
+@use "./normalize.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cutive+Mono&family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Nanum+Gothic:wght@400;700;800&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.feather-provider {
+	font-size: 16px;
+
+	&.light {
+		--color-background-0: #ffffff;
+		--color-background-1: #f6f6f6;
+		--color-background-2: #ececec;
+		--color-background-3: #e0e0e0;
+
+		--color-border-0: #f0f0f0;
+		--color-border-1: #e5e5e5;
+
+		--color-foreground-0: #000000;
+		--color-foreground-1: #333333;
+		--color-foreground-2: #666666;
+
+		--color-accent-0: #111111;
+		--color-accent-1: #333333;
+		--color-accent-2: #444444;
+		--color-accent-3: #888888;
+		--color-accent-foreground-0: #ffffff;
+
+		--color-shadow-l: rgb(0 0 0 / 20%);
+		--color-shadow-m: rgb(0 0 0 / 40%);
+		--color-shadow-s: rgb(0 0 0 / 60%);
+	}
+
+	&.dark {
+		--color-background-0: #030303;
+		--color-background-1: #1c1c1c;
+		--color-background-2: #2e2e2e;
+		--color-background-3: #404040;
+
+		--color-border-0: #191919;
+		--color-border-1: #272727;
+
+		--color-foreground-0: #ffffff;
+		--color-foreground-1: #dddddd;
+		--color-foreground-2: #bbbbbb;
+
+		--color-accent-0: #eeeeee;
+		--color-accent-1: #cccccc;
+		--color-accent-2: #aaaaaa;
+		--color-accent-3: #888888;
+		--color-accent-foreground-0: #000000;
+
+		--color-shadow-l: rgb(0 0 0 / 20%);
+		--color-shadow-m: rgb(0 0 0 / 40%);
+		--color-shadow-s: rgb(0 0 0 / 60%);
+	}
+
+	--font-code: "JetBrains Mono", monospace;
+	--font-decor: "Alegreya Sans", sans-serif;
+	--font-mono: "Cutive Mono", monospace;
+	--font-sans-serif: "Nanum Gothic", sans-serif;
+	--font-serif: "Cormorant Infant", serif;
+	--font-soft: "Nunito", sans-serif;
+
+	background-color: var(--color-background-0);
+	color: var(--color-foreground-0);
+}
+
+.font-code {
+	font-family: var(--font-code);
+	font-size: 14px;
+}
+
+.font-decor {
+	font-family: var(--font-decor);
+	font-size: 14px;
+}
+
+.font-mono {
+	font-family: var(--font-mono);
+	font-size: 14px;
+}
+
+.font-sans-serif {
+	font-family: var(--font-sans-serif);
+	font-size: 14px;
+}
+
+.font-serif {
+	font-family: var(--font-serif);
+	font-size: 14px;
+}
+
+.font-soft {
+	font-family: var(--font-soft);
+	font-size: 14px;
+}
+
 .gap-xs {
 	gap: 0.1em;
 }

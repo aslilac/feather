@@ -6,6 +6,7 @@
 	"devDependencies": {
 		"@mckayla/prettier": "^1.0.1",
 		"@mckayla/tsconfig": "^1.0.2",
+		"@parcel/transformer-sass": "^2.2.1",
 		"@types/jest": "^27.0.3",
 		"eslint": "^8.5.0",
 		"eslint-config-mckayla": "^1.0.4",
@@ -13,6 +14,8 @@
 		"typescript": "^4.5.4"
 	},
 	"scripts": {
+		"fmt": "eslint . --fix && stylelint '**/*.?(s)css' --fix && prettier -w .",
+		"lint": "npm run lint -w feather && stylelint '**/*.?(s)css' --fix",
 		"storybook": "npm run dev -w @feather/demo"
 	}
 }
