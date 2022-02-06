@@ -2,7 +2,7 @@
 	border: 1px solid var(--color-border-1);
 	box-shadow: 0 0.1em 0.25em var(--color-shadow-l);
 
-	transition: background-color 100ms, box-shadow 200ms, transform 200ms;
+	transition: background-color 100ms, box-shadow 100ms, transform 200ms;
 
 	&:focus {
 		border-color: transparent;
