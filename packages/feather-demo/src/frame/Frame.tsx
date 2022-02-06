@@ -7,7 +7,7 @@ import { Sidebar } from "./Sidebar";
 
 import styles from "./Frame.module.scss";
 
-interface FrameProps {
+export interface FrameProps {
 	children?: ReactNode;
 }
 
@@ -19,8 +19,14 @@ export const Frame = memo((props: FrameProps) => {
 			<chic.div cx="frame">
 				<Sidebar>
 					<Stack gap="sm">
-						<h1>Feather</h1>
-						<a href="#">Hello</a>
+						<h1>Controllers</h1>
+						<a href="#">SelectionController</a>
+
+						<h1>Elements</h1>
+						<a href="#">Button</a>
+						<a href="#">Flex / Line / Stack</a>
+						<a href="#">KeyboardShortcut</a>
+						<a href="#">Menu</a>
 					</Stack>
 				</Sidebar>
 				<Grid>{children}</Grid>

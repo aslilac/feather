@@ -1,8 +1,8 @@
 .grid {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 80px 40px;
-	padding: 20px;
+	grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+	gap: 80px 60px;
+	padding: 100px 30px;
 
 	background-image: linear-gradient(
 		to right,

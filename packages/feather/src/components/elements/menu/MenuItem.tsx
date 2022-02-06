@@ -5,7 +5,7 @@ export interface MenuItemProps {
 	children: ReactNode;
 	divider?: false;
 	label?: ReactNode;
-	something?: boolean;
+	onActivate?: () => void;
 }
 
 export interface MenuItemDividerProps {
@@ -21,10 +21,10 @@ export const MenuItem = memo((props: Props) => {
 		return <hr />;
 	}
 
-	const { children, label, something } = props;
+	const { children, label, onActivate } = props;
 
 	return (
-		<chic.li cx={[something ? "something" : "menu-item"]}>
+		<chic.li cx="menu-item" onMouseDown={onActivate}>
 			<chic.span cx="description">{children}</chic.span>
 			{label && <chic.span cx="label">{label}</chic.span>}
 		</chic.li>

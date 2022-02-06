@@ -4,12 +4,18 @@
 	align-items: center;
 	justify-content: space-between;
 
-	border-radius: 0.2em;
+	border-radius: 0.25em;
 	gap: 1em;
+
+	transition: background-color 100ms;
 
 	&:hover {
 		background-color: var(--color-background-2);
 		// background-color: blue;
+	}
+
+	&:active {
+		background-color: var(--color-background-3);
 	}
 }
 

@@ -1,0 +1,13 @@
+.card {
+	background-color: var(--color-background-1);
+	border-radius: 0.3em;
+	border: 1px solid var(--color-border-1);
+	box-shadow: 0 0 8px var(--color-shadow-m);
+	padding: 0.25em;
+}
+
+.md {
+	padding: 0.75em;
+	min-width: 18em;
+	// max-width: 100%;
+}

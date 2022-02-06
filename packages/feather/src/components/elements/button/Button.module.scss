@@ -1,37 +1,59 @@
-.kind-default {
-	font-size: 1em;
-	background-color: var(--color-accent-0);
-	color: var(--color-accent-foreground-0);
-	border-radius: 0.35em;
-	display: inline-block;
-	font-family: var(--font-sans-serif);
-	font-weight: 400;
-	text-align: center;
-	white-space: nowrap;
-	vertical-align: middle;
-	user-select: none;
-	border: 1px solid transparent;
-	padding: 1.2em 2em;
-	transition: box-shadow 200ms, filter 200ms, transform 200ms;
-	box-shadow: 0 0.1em 0.5em var(--color-shadow-l);
+.button {
+	border: 1px solid var(--color-border-1);
+	box-shadow: 0 0.1em 0.25em var(--color-shadow-l);
+
+	transition: background-color 100ms, box-shadow 200ms, transform 200ms;
 
 	&:focus {
-		box-shadow: 0 0.1em 0.5em var(--color-shadow-l), 0 0 2px blue;
-		filter: brightness(175%);
-		// background-color: var(--color-accent-1);
-		// box-shadow: 0 0 8px var(--color-background-2);
+		border-color: transparent;
+		box-shadow: 0 0.1em 0.25em var(--color-shadow-m),
+			0 0 0 0.2em var(--color-accent-3);
+		transform: translateY(-0.1em);
 	}
+}
+
+.size-xs {
+	border-radius: 0.4em;
+	padding: 0.6em 0.8em;
+}
+
+.size-sm {
+	border-radius: 0.4em;
+	padding: 0.8em 1.2em;
+}
+
+.size-md {
+	border-radius: 0.5em;
+	padding: 1.2em 2em;
+}
+
+.kind-primary {
+	background-color: var(--color-accent-0);
+	color: var(--color-accent-foreground-0);
 
 	&:hover {
-		// box-shadow: 0 0.1em 0.5em var(--color-shadow-l), 0 0 5px blue;
-		// box-shadow: 0 0 2px blue;
-		filter: brightness(200%);
+		background-color: var(--color-accent-1);
 		transform: scale(1.025) translateY(-0.1em);
-		// background-color: var(--color-accent-2);
-		// border: 1px solid var(--color-accent-2);
+	}
+
+	&:active {
+		background-color: var(--color-accent-2);
+	}
+}
+
+.kind-default {
+	background-color: var(--color-background-2);
+
+	&:hover {
+		background-color: var(--color-background-3);
+		transform: scale(1.025) translateY(-0.1em);
+	}
+
+	&:active {
+		background-color: var(--color-background-4);
 	}
 }
 
 .pill {
-	border-radius: 1.8em;
+	border-radius: 1.9em;
 }

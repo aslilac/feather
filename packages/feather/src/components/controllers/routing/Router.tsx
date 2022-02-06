@@ -15,5 +15,9 @@ export interface RouterProps {
 export const Router = memo((props: RouterProps) => {
 	const { children } = props;
 
-	return <RouterContext.Provider>{children}</RouterContext.Provider>;
+	return (
+		<RouterContext.Provider value={{ segments: [] }}>
+			{children}
+		</RouterContext.Provider>
+	);
 });
