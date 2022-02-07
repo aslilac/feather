@@ -16,6 +16,7 @@
 	"scripts": {
 		"fmt": "eslint . --fix && stylelint '**/*.?(s)css' --fix && prettier -w .",
 		"lint": "npm run lint -w feather && stylelint '**/*.?(s)css' --fix",
-		"storybook": "npm run dev -w @feather/demo"
+		"storybook": "npm run dev -w @feather/demo",
+		"build-storybook": "npm run build -w feather && npm run build -w @feather/demo"
 	}
 }
